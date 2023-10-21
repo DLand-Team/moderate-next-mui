@@ -1,0 +1,53 @@
+{
+	"name": "demo",
+	"private": true,
+	"version": "7.0.0",
+	"description": "Demo of redux wrapper for Next.js",
+	"scripts": {
+		"clean": "rimraf .next coverage",
+		"test": "playwright test",
+		"start": "next"
+	},
+	"dependencies": {
+		"@mui/icons-material": "latest",
+		"@mui/material": "latest",
+		"@mui/x-data-grid": "^6.10.2",
+		"@reduxjs/toolkit": "^1.9.5",
+		"great-async": "^1.0.6",
+		"natur": "next",
+		"natur-immer": "next",
+		"next-redux-wrapper": "latest",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-redux": "^8.1.1",
+		"redux": "^4.2.1",
+		"redux-logger": "^3.0.6"
+	},
+	"devDependencies": {
+		"@emotion/cache": "latest",
+		"@emotion/react": "latest",
+		"@emotion/server": "latest",
+		"@emotion/styled": "latest",
+		"@playwright/test": "1.17.1",
+		"@types/react": "^18.2.15",
+		"@types/react-dom": "^18.2.7",
+		"@types/react-redux": "^7.1.25",
+		"@types/redux-logger": "^3.0.9",
+		"next": "^13.4.10",
+		"playwright": "1.17.1",
+		"rimraf": "3.0.2",
+		"sass": "^1.55.0",
+		"sass-loader": "^13.1.0",
+		"typescript": "4.5.2"
+	},
+	"author": "Kirill Konshin",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/kirill-konshin/next-redux-wrapper.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kirill-konshin/next-redux-wrapper/issues"
+	},
+	"homepage": "https://github.com/kirill-konshin/next-redux-wrapper",
+	"license": "MIT"
+}
