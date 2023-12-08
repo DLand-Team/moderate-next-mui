@@ -1,24 +1,27 @@
 import React from "react";
 import Container from "@/pages/management/dashboard/Dashboard.style";
 import { AppBar } from "@mui/material";
-import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
-import { useFlatInject } from "@/services/stores";
+import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
+import { useFlat } from "@/service";
 
 type DashboardPropsType = {
-	className?: string,
-}
+	className?: string;
+};
 
 const Dashboard: React.ComponentType<DashboardPropsType> = (props) => {
-
-	const { isMobile } = useFlatInject('appStore')[0];
+	const { isMobile } = useFlat("appStore");
 
 	return (
 		<Container className={props.className}>
-			<div className={`area ${isMobile ? 'phone-column-area' : 'desktop-row-area'}`}>
+			<div
+				className={`area ${
+					isMobile ? "phone-column-area" : "desktop-row-area"
+				}`}
+			>
 				<div className="each">
 					<AppBar className="bar" position="static">
 						<div className="title">My Dashboard</div>
-						<AssignmentOutlinedIcon/>
+						<AssignmentOutlinedIcon />
 					</AppBar>
 					<div className="content row">
 						<div className="block-type-1">
@@ -32,14 +35,16 @@ const Dashboard: React.ComponentType<DashboardPropsType> = (props) => {
 					</div>
 					<div className="content column">
 						<div className="block-type-2">
-							<div className="start">Total Added To Wishlist 0</div>
+							<div className="start">
+								Total Added To Wishlist 0
+							</div>
 						</div>
 					</div>
 				</div>
 				<div className="each">
 					<AppBar className="bar" position="static">
 						<div className="title">Leads Summary</div>
-						<AssignmentOutlinedIcon/>
+						<AssignmentOutlinedIcon />
 					</AppBar>
 					<div className="content column">
 						<div className="block-type-2">
@@ -61,13 +66,12 @@ const Dashboard: React.ComponentType<DashboardPropsType> = (props) => {
 				<div className="each">
 					<AppBar className="bar" position="static">
 						<div className="title">Leads Timeline</div>
-						<AssignmentOutlinedIcon/>
+						<AssignmentOutlinedIcon />
 					</AppBar>
 				</div>
 			</div>
 		</Container>
-	)
-
-}
+	);
+};
 
 export default Dashboard;

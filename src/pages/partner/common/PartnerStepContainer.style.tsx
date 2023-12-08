@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import React, { useEffect } from "react";
-import { useFlatInject } from "@/services/stores";
+import { useFlat } from "@/service";
 import { useMediaQuery } from "@mui/material";
 import { MAX_MOBILE_WIDTH, MAX_TABLET_WIDTH } from "@/pages/setting";
 
@@ -9,7 +9,7 @@ let cssVarsValue: any = {};
 
 const Container = styled((props: { className, children }) => {
 
-	const { isMobile } = useFlatInject('appStore')[0];
+	const { isMobile } = useFlat("appStore");
 	const [vars, setVars] = React.useState<React.CSSProperties>({} as React.CSSProperties);
 
 	const matchesUpperTablet = useMediaQuery(`(min-width: ${MAX_TABLET_WIDTH + 16}px)`);

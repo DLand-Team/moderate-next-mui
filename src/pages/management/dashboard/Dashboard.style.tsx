@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import { useFlatInject } from "@/services/stores";
+import { useFlat } from "@/service";
 
 let cssVarsValue: any = {};
 
 const Container = styled((props: { className, children }) => {
 
-	const { isMobile } = useFlatInject('appStore')[0];
+	const { isMobile } = useFlat("appStore");
 	const [vars, setVars] = useState<React.CSSProperties>({} as React.CSSProperties);
 
 	return (

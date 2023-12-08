@@ -4,14 +4,14 @@ import Header from "@/common/components/Header/Header";
 import Container from "@/pages/partner/partner.style";
 import { Button, Step, StepLabel, Stepper } from "@mui/material";
 import bannerImage from '@/assets/image/banner.jpg';
-import { useFlatInject } from "@/services/stores";
+import { useFlat } from "@/service";
 import PartnerStep1 from "@/pages/partner/step/PartnerStep1";
 import PartnerStep2 from "@/pages/partner/step/PartnerStep2";
 import PartnerStep3 from "@/pages/partner/step/PartnerStep3";
 
 const partnerPage: NextPage = () => {
 
-	const { isMobile } = useFlatInject('appStore')[0];
+	const { isMobile } = useFlat("appStore");
 	const [activeStep, setActiveStep] = useState(0);
 
 	const preStep = () => {

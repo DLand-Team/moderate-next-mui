@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import LowlightText from "@/common/components/Text/LowlightText";
 import Tabs from "@mui/material/Tabs";
 import PriceCard from "@/pages/partner/common/PriceCard";
-import { useFlatInject } from "@/services/stores";
+import { useFlat } from "@/service";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
@@ -17,7 +17,7 @@ type PartnerStep3PropsType = {
 
 const PartnerStep3: React.ComponentType<PartnerStep3PropsType> = (props) => {
 
-	const { isMobile } = useFlatInject('appStore')[0];
+	const { isMobile } = useFlat("appStore");
 	const [currentCard, setCurrentCard] = useState(0);
 
 	const cardPre = () => {

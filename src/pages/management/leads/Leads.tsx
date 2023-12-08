@@ -5,7 +5,7 @@ import { InputLabel, TextField } from "@mui/material";
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import MenuItem from "@mui/material/MenuItem";
-import { useFlatInject } from "@/services/stores";
+import { useFlat } from "@/service";
 
 const columns: GridColDef[] = [
 	{ field: 'id', headerName: 'ID', width: 70 },
@@ -40,7 +40,7 @@ type LeadsPropsType = {
 
 const Leads: React.ComponentType<LeadsPropsType> = (props) => {
 
-	const { isMobile } = useFlatInject('appStore')[0];
+	const { isMobile } = useFlat("appStore");
 
 	return (
 		<Container className={props.className}>

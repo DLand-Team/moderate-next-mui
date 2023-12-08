@@ -9,7 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Divider from "@mui/material/Divider";
-import { useFlatInject } from "@/services/stores";
+import { useFlat } from "@/service";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
 type OpportunitiesPropsType = {
@@ -18,7 +18,7 @@ type OpportunitiesPropsType = {
 
 const Opportunities: React.ComponentType<OpportunitiesPropsType> = (props) => {
 
-	const { isMobile } = useFlatInject('appStore')[0];
+	const { isMobile } = useFlat("appStore");
 
 	return (
 		<Container className={props.className}>
