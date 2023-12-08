@@ -47,10 +47,10 @@ const Opportunities: React.ComponentType<OpportunitiesPropsType> = (props) => {
 						<TextField size="small" fullWidth label="Market Price"/>
 					</div>
 					<div className="input full required">
-						<TextField size="small" fullWidth label="Scaling Price"/>
+						<TextField size="small" fullWidth label="Dland Price"/>
 					</div>
 					<div className="input full">
-						<TextField size="small" fullWidth label="Scaling Member Saving Percentage %"/>
+						<TextField size="small" fullWidth label="Dland Member Saving Percentage %"/>
 					</div>
 				</div>
 			</div>

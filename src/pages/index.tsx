@@ -41,7 +41,7 @@ const IndexPage = (props: PageProps) => {
 					<div className={styles.topText}>
 						Discover New Opportunities & Drive Growth
 					</div>
-					<div className={styles.bottomText}>Access Unbeatable Value with Scaling's Exclusive Opportunities
+					<div className={styles.bottomText}>Access Unbeatable Value with Dland's Exclusive Opportunities
 						for SMEs
 					</div>
 				</div>

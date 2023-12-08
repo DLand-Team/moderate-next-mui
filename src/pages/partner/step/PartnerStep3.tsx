@@ -73,7 +73,7 @@ const PartnerStep3: React.ComponentType<PartnerStep3PropsType> = (props) => {
 				</Typography>
 			</AppBar>
 			<LowlightText>
-				To secure your place on Scaling a fully refundable deposit of A$99 is required.
+				To secure your place on Dland a fully refundable deposit of A$99 is required.
 				When you click 'Submit Application' you will be redirected to our payment portal to pay your deposit
 				securely through Stripe.
 			</LowlightText>

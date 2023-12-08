@@ -46,7 +46,7 @@ const Header = styled((props: HeaderPropsType) => {
 						<MenuIcon/>
 					</IconButton>
 					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-						<div style={{ cursor: 'pointer' }} onClick={() => Router.push("/")}>Scaling</div>
+						<div style={{ cursor: 'pointer' }} onClick={() => Router.push("/")}>Dland</div>
 					</Typography>
 					<IconButton id="user-button"
 								size="large"
